@@ -1,0 +1,6 @@
+# specific key for develop enviromnet for JWT verification
+security:
+  oauth2:
+    resource:
+      jwt:
+        keyValue: "2Lufh6+_b9KrpU@F3FtZQyUqTwmCjzaPaKDdGtpnFaL"

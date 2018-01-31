@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: onboarding-first-service
+
+hello:
+  message: Wellcome to the Onboarding First Service - Staging Environment
