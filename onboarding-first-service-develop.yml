@@ -4,3 +4,7 @@ spring:
 
 hello:
   message: Wellcome to the Onboarding First Service - Develop Environment
+
+oauth2:
+  security:
+    enabled: false
