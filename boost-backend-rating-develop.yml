@@ -4,3 +4,5 @@ spring:
     riverClassName: com.mysql.jdbc.Drive
     username: ${DB_USER}
     password: ${DB_PWD}
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
