@@ -1,8 +1,0 @@
-spring: 
-  datasource: 
-    url: jdbc:mysql://${DB_URL}
-    riverClassName: com.mysql.jdbc.Drive
-    username: ${DB_USER}
-    password: ${DB_PWD}
-  jpa:
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
