@@ -1,6 +1,6 @@
 spring:
   application:
-    name: onboarding-product-catalogue
+    name: onboarding-backend-server
 
 server:
   port: ${SERVICE_PORT:8080}   # HTTP (Tomcat) port
