@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: onboarding-product-catalogue
+
+server:
+  port: ${SERVICE_PORT:8080}   # HTTP (Tomcat) port
+
+auth:
+  service:
+    client: "onboarding_product_catalogue_client"
+    secret: "5yynnKSq4ERW23cJvdvdg54564"
+    scope: "ONBOARDING"
+
+onboarding:
+  client:
+      user: "onboarding"
+      password: "mxTSms6aeQptCzCJ"
+
+jwt:
+  singning:
+    key: "AmPkxJZf=YH%uVprWueg23s^&4w5r_5H5_$RCznr"
