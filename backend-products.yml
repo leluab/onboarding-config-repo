@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      database: products
+      host: localhost
+      port: 27017
+
+errors:
+  productNotFound:
+    detail: "Cannot find the requested product"
