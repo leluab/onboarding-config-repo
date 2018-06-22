@@ -1,3 +1,0 @@
-errors:
-  productNotFound:
-    detail: "Cannot find the requested product"
