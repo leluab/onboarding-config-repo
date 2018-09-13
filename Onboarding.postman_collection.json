@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "5b379685-2205-42e8-8a33-f8d76119fe46",
+		"name": "Onboarding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Configuration Auth Server",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://onboarding-config-server.4t0tk.k8s.asgard.dub.aws.k8s.3stripes.net/onboarding-auth-service/develop",
+					"protocol": "http",
+					"host": [
+						"onboarding-config-server",
+						"4t0tk",
+						"k8s",
+						"asgard",
+						"dub",
+						"aws",
+						"k8s",
+						"3stripes",
+						"net"
+					],
+					"path": [
+						"onboarding-auth-service",
+						"develop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Configuration First Service (develop)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://onboarding-config-server.4t0tk.k8s.asgard.dub.aws.k8s.3stripes.net/onboarding-first-service/develop",
+					"protocol": "http",
+					"host": [
+						"onboarding-config-server",
+						"4t0tk",
+						"k8s",
+						"asgard",
+						"dub",
+						"aws",
+						"k8s",
+						"3stripes",
+						"net"
+					],
+					"path": [
+						"onboarding-first-service",
+						"develop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Configuration First Service (staging)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://onboarding-config-server.4t0tk.k8s.asgard.dub.aws.k8s.3stripes.net/onboarding-first-service/staging",
+					"protocol": "http",
+					"host": [
+						"onboarding-config-server",
+						"4t0tk",
+						"k8s",
+						"asgard",
+						"dub",
+						"aws",
+						"k8s",
+						"3stripes",
+						"net"
+					],
+					"path": [
+						"onboarding-first-service",
+						"staging"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "onboarding",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "mxTSms6aeQptCzCJ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://onboarding_client:5yynnKSq4ERW23cJ@onboarding-auth-server.4t0tk.k8s.asgard.dub.aws.k8s.3stripes.net/oauth/token",
+					"protocol": "http",
+					"host": [
+						"onboarding-auth-server",
+						"4t0tk",
+						"k8s",
+						"asgard",
+						"dub",
+						"aws",
+						"k8s",
+						"3stripes",
+						"net"
+					],
+					"auth": {
+						"user": "onboarding_client",
+						"password": "5yynnKSq4ERW23cJ"
+					},
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "onboarding-first-service",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MTc2MzEzNzcsInVzZXJfbmFtZSI6Im9uYm9hcmRpbmciLCJhdXRob3JpdGllcyI6WyJBVVRIX1VTRVIiXSwianRpIjoiNGExYjdhMWQtN2Q4My00NjQ3LWIxZTctZmI0OTM5YmMyMTE3IiwiY2xpZW50X2lkIjoib25ib2FyZGluZ19jbGllbnQiLCJzY29wZSI6WyJPTkJPQVJESU5HIl19.O_DzlEjlY8OtVu14uYL_xqf3SVbSy7A-hkm6qihT9cI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/helloSpringBootSeed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"helloSpringBootSeed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-token (local)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "onboarding",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "mxTSms6aeQptCzCJ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://onboarding_client:5yynnKSq4ERW23cJ@localhost:8080/oauth/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"auth": {
+						"user": "onboarding_client",
+						"password": "5yynnKSq4ERW23cJ"
+					},
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": "\t\t\t"
+			},
+			"response": []
+		}
+	]
+}
